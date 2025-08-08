@@ -16,7 +16,7 @@ def clean_pdf_text(pdf_path, output_txt_path):
         # - Remove repeated headers/footers
         cleaned = re.sub(r'\n\s*\n', '\n', raw_text)  # Collapse multiple blank lines
         cleaned = re.sub(r'^\s*\d+\s*$', '', cleaned, flags=re.MULTILINE)  # Remove standalone page numbers
-        cleaned = re.sub(r'INCOME TAX LAW', '', cleaned, flags=re.IGNORECASE)  # Remove repeating title
+        cleaned = re.sub(r'', '', cleaned, flags=re.IGNORECASE)  # Remove repeating title
         cleaned = cleaned.strip()
         all_text += cleaned + "\n\n"
 
@@ -27,7 +27,7 @@ def clean_pdf_text(pdf_path, output_txt_path):
     print(f"Cleaned text saved to {output_txt_path}")
 
 # Example usage
-pdf_path = "15. Income Tax Law Author World Trade Organization.pdf"
-output_txt_path = "cleaned_income_tax_law.txt"
+pdf_path = ".pdf"
+output_txt_path = ".txt"
 
 clean_pdf_text(pdf_path, output_txt_path)
