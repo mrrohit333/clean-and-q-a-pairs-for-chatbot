@@ -35,4 +35,4 @@ def generate_qa_pairs(text_path, output_path):
     print(f"{len(qa_pairs)} Q&A pairs saved to {output_path}")
 
 # Run the function
-generate_qa_pairs("cleaned_income_tax_law.txt", "qa_pairs.txt")
+generate_qa_pairs(".txt", "qa_pairs.txt")
