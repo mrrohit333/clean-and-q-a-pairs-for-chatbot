@@ -13,8 +13,8 @@ This project contains two Python scripts that:
 - **Cleaning Includes:**
   - Removing extra whitespace and blank lines.
   - Removing standalone page numbers.
-  - Removing repeated headers like "INCOME TAX LAW".
-- **Output:** A cleaned text file (`cleaned_income_tax_law.txt`).
+  - Removing repeated headers.
+- **Output:** A cleaned text file (`.txt`).
 
 ### `questions.py`
 - **Purpose:** Parses the cleaned text and auto-generates Q&A pairs.
